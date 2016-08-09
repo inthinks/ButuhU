@@ -1,0 +1,55 @@
+
+
+<div class="contentArea">
+    <div class="contentBox">
+        <h1>Loan &raquo; List</h1>
+        <div class="contentTable">
+            <table class="tablesorter" id="homebanner_table" width="100%">
+                <thead>
+                    <tr>
+                        <th width="3%">No</th>
+                        <th width="10%">Action</th>
+                        <th width="15%">Customer Fullname</th>
+                        <th width="5%">Phone Number</th>
+                        <th width="10%">Loan Amount</th>
+                        <th width="2%">Loan Length</th>
+                        <th width="10%">Total Repayable</th>
+                        <th width="3%">Loan Status</th>
+                        <th width="15%">Created Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $no=1;foreach($lists as $list){?>
+                        <tr id="<?php echo $list['id'] ?>">
+                            <td><?php echo $no;?></td>
+                            <td>
+                            <a title="Edit" href="<?php echo site_url('admin/loan/reject').'/'.$list['id'];?>">Reject</a>  |
+                            <a title="Edit" href="<?php echo site_url('admin/loan/pending').'/'.$list['id'];?>">Pending</a>
+                            </td>
+                            <td><?php echo $list['personal_full_name']; ?></td>
+                            <td><?php echo $list['phone_verification']; ?></td>
+                            <td><?php echo 'Rp. ' . number_format( $list['loan_amount'], 0 , '' , '.' ) . ',-'; ?></td>
+                            <td><?php echo $list['loan_length']; echo ' Hari'?></td>
+                            <td><?php echo 'Rp. ' . number_format( $list['total_repayable'], 0 , '' , '.' ) . ',-'; ?></td>
+                            <td><?php if($list['loan_status']==0){ echo "Pending";} else {echo "Rejected";} ?></td>
+                            <td><?php echo $list['created_date'] ?></td>
+                        </tr>
+                    <?php $no++;}?>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+         </div>
+      </div>
+</div>

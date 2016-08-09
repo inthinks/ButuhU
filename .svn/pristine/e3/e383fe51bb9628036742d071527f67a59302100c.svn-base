@@ -1,0 +1,84 @@
+<section>
+            <div class="loginRegisWrapper">
+                <div class="signinBox">
+                    <h3>Login</h3>
+                    <ul>
+                        <li>
+                            <span>Username</span>
+                            <input type="text" placeholder="your username">
+                        </li>
+                        <li>
+                            <span>Password</span>
+                            <input type="password" placeholder="your password">
+                        </li>
+                    </ul>
+                    <div class="remindBox">
+                        <label><input type="checkbox"><span>Remind me?</span></label>
+                        <a href="#">forgot your password?</a>
+                    </div>
+                    <a href="#" class="defBtn">Login</a>
+                </div>
+                <div class="signupBox">
+                    <?php //echo form_open('login/do_register')?>
+                    <form method="post" action="<?php echo site_url('login/do_register')?>" id="formID" >
+                    <h3>Not Member Yet?</h3>
+                    <ul>
+                        <li>
+                            <span>Full Name</span>
+                            <input name="fullname"  id="fullname" value="<?php echo ($this->session->userdata('register')['personal_full_name'] ? $this->session->userdata('register')['personal_full_name'] : '')  ?>" type="text" placeholder="your full name" required>
+                        </li>
+                        <li>
+                            <span>Username</span>
+                            <input name="username" id="username" value="<?php echo ($this->session->userdata('register')['username'] ? $this->session->userdata('register')['username'] : '')  ?>" type="text" placeholder="your username" required>
+                        </li>
+                        <li>
+                            <span>Password</span>
+                            <input  name="password" id="password" type="password" placeholder="your password" required>
+                        </li>
+                        <li>
+                            <span>Confirm Password</span>
+                            <input  id="confirm_password" name="confirm_password" type="password" placeholder="your password" >
+                        </li>
+                    </ul>
+                    <em><font color="red"><?php echo $this->session->flashdata('back');?></font></em>
+                    <a style="cursor: pointer" id="submit" class="defBtn">Register</a>
+                    <input type="submit" style="visibility:hidden" />
+
+                    
+                    <?php echo form_close(); ?>
+                </div>
+            </div>
+        </section>
+    <script>
+    $(document).ready(function() {
+      $("#formID").validate({
+        rules: {
+          fullname: {
+            required: true
+          },
+          username:{
+            required:true
+          },
+          password: {
+            required:true,
+            minlength:5
+          },
+        },
+        messages: {
+          fullname: "Please enter your fullname.",
+          username: "Please enter your username.",
+          password: {
+                required:"please provide your password!",
+                minlength:"Your password must be at least 5 characters long",
+            },
+          },
+    
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+      $("#submit").click(function() {
+        $("#formID").submit();
+      });
+    });
+    </script>

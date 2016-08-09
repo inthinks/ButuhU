@@ -1,0 +1,108 @@
+<section>
+            <div class="stepWrapper">
+                <ul>
+                    <li class="selected">
+                        <div class="stepImage">1</div>
+                        <div class="stepInfo">Choose Your Loan</div>
+                    </li>
+                    <li>
+                        <div class="stepImage">2</div>
+                        <div class="stepInfo">Your Data Detail</div>
+                    </li>
+                    <li>
+                        <div class="stepImage">3</div>
+                        <div class="stepInfo">Email Verification</div>
+                    </li>
+                    <li>
+                        <div class="stepImage">4</div>
+                        <div class="stepInfo">Finish</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="setupBox">
+                <?php echo form_open('Step_loan/do_step_1') ?>
+                <h3>Your Data Detail</h3>
+                <div class="dataDetailBox">
+                    <div class="dataDetailLeft">
+                        Data Pinjaman
+                    </div>
+                    <div class="dataDetailRight">
+                        <div class="ddrTop">
+                            <ul>
+                                <li>Loan Amount</li>
+                                <li>Interest / Fee</li>
+                                <li>Total Repayable</li>
+                                <li>Due Date</li>
+                            </ul>
+                        </div>
+                        <div class="ddrBottom">
+                            <ul>
+                                <li>Rp 8.000.000,-</li>
+                                <li>Rp 460.000,-</li>
+                                <li>Rp 8.460.000,-</li>
+                                <li>31 Sept 2016</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseYourLoan">
+                    <div class="loanLeftBox">
+                        <ul>
+                            <li>
+                                <span>Jumlah Pinjaman</span>
+                                <div class="selectBox">
+                                    <select name="nilai">
+                                        <option value="1" <?php echo ($this->session->userdata('step1')['nilai'] == 1 ? 'selected' : '');?>>Rp. 8.000.000,-</option>
+                                        <option value='2' <?php echo ($this->session->userdata('step1')['nilai'] == 2 ? 'selected' : '');?>>Rp. 9.000.000,-</option>
+                                        <option value='3' <?php echo ($this->session->userdata('step1')['nilai'] == 3 ? 'selected' : '');?>>Rp. 10.000.000,-</option>
+                                        <option value='4' <?php echo ($this->session->userdata('step1')['nilai'] == 4 ? 'selected' : '');?>>Rp. 11.000.000,-</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Periode Pinjaman</span>
+                                <div class="selectBox">
+                                    <select name="period">
+                                        <option value='1' <?php echo ($this->session->userdata('step1')['periode'] == 1 ? 'selected' : '');?>>3 Bulan</option>
+                                        <option value='2' <?php echo ($this->session->userdata('step1')['periode'] == 2 ? 'selected' : '');?>>4 Bulan</option>
+                                        <option value='3' <?php echo ($this->session->userdata('step1')['periode'] == 3 ? 'selected' : '');?>>5 Bulan</option>
+                                        <option value='4' <?php echo ($this->session->userdata('step1')['periode'] == 4 ? 'selected' : '');?>>6 Bulan</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="loanRightBox">
+                        <span>Loan Detail</span>
+                        <div class="loanDescBox">
+                            <table>
+                                <tr>
+                                    <td>Loan Amount</td>
+                                    <td>:</td>
+                                    <td>Rp. 8.000.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td>Interest / Fee</td>
+                                    <td>:</td>
+                                    <td>Rp. 460.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Repayable</td>
+                                    <td>:</td>
+                                    <td>Rp. 8.460.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td>Due Date</td>
+                                    <td>:</td>
+                                    <td>31 Sept 2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonWrapper">
+                        <a href="#" onclick="document.forms[0].submit();return false;"class="defBtn nextBtn">Next &gt;</a>
+                    </div>
+                    <?php echo form_close(); ?>
+            </div>
+        </section>

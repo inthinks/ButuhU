@@ -1,0 +1,254 @@
+<section>
+            <div class="stepWrapper">
+                <ul>
+                    <li class="done">
+                        <div class="stepImage">1</div>
+                        <div class="stepInfo">Choose Your Loan</div>
+                    </li>
+                    <li class="selected">
+                        <div class="stepImage">2</div>
+                        <div class="stepInfo">Your Data Detail</div>
+                    </li>
+                    <li>
+                        <div class="stepImage">3</div>
+                        <div class="stepInfo">Email Verification</div>
+                    </li>
+                    <li>
+                        <div class="stepImage">4</div>
+                        <div class="stepInfo">Finish</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="setupBox">
+                <?php echo form_open('step_loan/do_step_5','id=formID'); ?>
+                <h3>Your Data Detail</h3>
+                <div class="dataDetailBox">
+                    <div class="dataDetailLeft">
+                        Data Pinjaman
+                    </div>
+                    <div class="dataDetailRight">
+                        <div class="ddrTop">
+                            <ul>
+                                <li>Loan Amount</li>
+                                <li>Interest / Fee</li>
+                                <li>Total Repayable</li>
+                                <li>Due Date</li>
+                            </ul>
+                        </div>
+                        <div class="ddrBottom">
+                            <ul>
+                                <li>Rp 8.000.000,-</li>
+                                <li>Rp 460.000,-</li>
+                                <li>Rp 8.460.000,-</li>
+                                <li>31 Sept 2016</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="formWrapper">
+
+                    <ul>
+                        <li><a href="#personal_detail">Personal Detail</a></li>
+                        <li><a href="#contact_detail">Contact Detail</a></li>
+                        <li><a href="#bank_detail">Bank Detail</a></li>
+                        <li><a href="#other_detail" class="selected">Other Detail</a></li>
+                        <li><a href="#agreement">Agreement</a></li>
+                    </ul>
+                    <div class="formBox">
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Employment Type* 
+                                <span>Your employment type</span>
+                            </div>
+                            <div class="formRightBox">
+                                <select name="type">
+                                    <option value="0" <?php echo ($this->session->userdata('step5')['employment_type'] == 0 ? 'selected' : '');?>>Type 1</option>
+                                    <option value="1" <?php echo ($this->session->userdata('step5')['employment_type'] == 1 ? 'selected' : '');?>>Type 2</option>
+                                    <option value="2" <?php echo ($this->session->userdata('step5')['employment_type'] == 2 ? 'selected' : '');?>>Type 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Employment Name*
+                                <span>Employment name</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="name" name="name" type="text" value="<?php echo ($this->session->userdata('step5')['employment_company_name'] ? $this->session->userdata('step5')['employment_company_name'] : ''); ?>" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Employment Role*
+                                <span>Your current position</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="role" name="role" type="text" value="<?php echo ($this->session->userdata('step5')['employment_company_role'] ? $this->session->userdata('step5')['employment_company_role'] : ''); ?>" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Address*
+                                <span>Main address with your KTP<br>ex: jalan S.Parman Kav 22-24</span>
+                            </div>
+                            <div class="formRightBox">
+                                <textarea id="address" name="address" required><?php echo ($this->session->userdata('step5')['employment_company_address'] ? $this->session->userdata('step5')['employment_company_address'] : '')  ?></textarea>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Employment Phone Number*
+                                <span>Ex: 021xxxxx</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="phone_number" name="phone_number" type="text" value="<?php echo ($this->session->userdata('step5')['employment_company_phone_number'] ? $this->session->userdata('step5')['employment_company_phone_number'] : '')  ?>" pattern="[0][0-9]{8}" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Monthly Income*
+                                <span>Ex: 3000000 for 3 million rupiah</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="income" name="income" type="text" value="<?php echo ($this->session->userdata('step5')['main_monthly_income'] ? $this->session->userdata('step5')['main_monthly_income'] : '')  ?>" pattern="[0-9]{7}" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Length Of Work*
+                                <span>appropriate with years and months</span>
+                            </div>
+                            <div class="formRightBox">
+                                <div class="halfBox">
+                                    <select name="year">
+                                        <option value="0" <?php echo ($this->session->userdata('step5')['employment_length_years'] == 0 ? 'selected' : '');?>>Tahun 1</option>
+                                        <option value="1" <?php echo ($this->session->userdata('step5')['employment_length_years'] == 1 ? 'selected' : '');?>>Tahun 2</option>
+                                        <option value="2" <?php echo ($this->session->userdata('step5')['employment_length_years'] == 2 ? 'selected' : '');?>>Tahun 3</option>
+                                        <option value="3" <?php echo ($this->session->userdata('step5')['employment_length_years'] == 3 ? 'selected' : '');?>>Tahun 4</option>
+                                    </select>
+                                </div>
+                                <div class="halfBox">
+                                    <select name="month">
+                                        <option value="0" <?php echo ($this->session->userdata('step5')['employment_length_months'] == 0 ? 'selected' : '');?>>Month 1</option>
+                                        <option value="1" <?php echo ($this->session->userdata('step5')['employment_length_months'] == 1 ? 'selected' : '');?>>Month 2</option>
+                                        <option value="2" <?php echo ($this->session->userdata('step5')['employment_length_months'] == 2 ? 'selected' : '');?>>Month 3</option>
+                                        <option value="3" <?php echo ($this->session->userdata('step5')['employment_length_months'] == 3 ? 'selected' : '');?>>Month 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Main Expenses*
+                                <span>Ex: 2000000 for 2 million rupiah</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="expenses" name="expenses" type="text" value="<?php echo ($this->session->userdata('step5')['main_expenses'] ? $this->session->userdata('step5')['main_expenses'] : '')  ?>" pattern="[0-9]{7}" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                House of loan*
+                                <span>Appropriate 0 if you do not have houseloan</span>
+                            </div>
+                            <div class="formRightBox">
+                                <input id="house" name="house_loan" type="text" value="<?php echo ($this->session->userdata('step5')['house_of_loan'] ? $this->session->userdata('step5')['house_of_loan'] : '')  ?>" pattern="[0-9]{1}" required>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Purpose of Loan*
+                                <span>Choose purpose of loan</span>
+                            </div>
+                            <div class="formRightBox">
+                                <select name="purpose">
+                                    <option value="0" <?php echo ($this->session->userdata('step5')['purpose_of_loan'] == 0 ? 'selected' : '');?>>purpose 1</option>
+                                    <option value="1" <?php echo ($this->session->userdata('step5')['purpose_of_loan'] == 1 ? 'selected' : '');?>>purpose 2</option>
+                                    <option value="2" <?php echo ($this->session->userdata('step5')['purpose_of_loan'] == 2 ? 'selected' : '');?>>purpose 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <div class="formLeftBox">
+                                Knowing Butuhuang.com*
+                                <span>Choose knowing Butuhuang.com</span>
+                            </div>
+                            <div class="formRightBox">
+                                <select name="knowing">
+                                    <option value="0" <?php echo ($this->session->userdata('step5')['knowing_butuh_uang'] == 0 ? 'selected' : '');?>>choose 1</option>
+                                    <option value="1" <?php echo ($this->session->userdata('step5')['knowing_butuh_uang'] == 1 ? 'selected' : '');?>>choose 2</option>
+                                    <option value="2" <?php echo ($this->session->userdata('step5')['knowing_butuh_uang'] == 2 ? 'selected' : '');?>>choose 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonWrapper">
+                    <a href="<?php echo site_url('Step_loan/step_4'); ?>" class="defBtn prevBtn">&lt; Previous</a>
+                    <a href="#" id="submit" class="defBtn nextBtn">Next &gt;</a>
+                </div>
+             <?php echo form_close(); ?>   
+            </div>
+            
+        </section>
+
+<script>
+    $(document).ready(function() {
+      $("#formID").validate({
+        /*rules: {
+          name: {
+            required: true
+          },
+          role:{
+            required:true
+          },
+          address:{
+            required:true
+          },
+          phone_number:{
+            required:true,
+            number:true,
+            minlength:6,
+            maxlength:12,
+          },
+          income:{
+            required:true,
+            number:true,
+          },
+          expenses:{
+            required:true,
+            number:true
+          },
+          house:{
+            required:true
+          },
+        },
+        messages: {
+          name: "Please enter your company name.",
+          role: "Please enter your role.",
+          address: "Please enter your company address.",
+          phone_number: {
+            required:"Please enter your company phone number.",
+            number:"your input must be number.",
+            minlength:"minimal character 5",
+            maxlength:"maximal character 12",
+            }
+          income: "Please enter your income.",
+          expenses: {
+            required:"Please enter your expenses.",
+            number:"your input must be number.",
+          house: "Please enter your house of loan.",
+          
+          },*/
+    
+        submitHandler: function(form) {
+          form.submit();
+        }
+      });
+      $("#submit").click(function() {
+        $("#formID").submit();
+      });
+    });
+    </script>

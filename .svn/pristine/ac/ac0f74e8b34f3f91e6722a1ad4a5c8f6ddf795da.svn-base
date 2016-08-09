@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="HandheldFriendly" content="true" />
+<title>Set Up Loan | Butuh Uang</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href="css/butuhuang.css" rel="stylesheet" type="text/css">
+<link href="css/selectordie.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/selectordie.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/mwheelIntent.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/main.js"></script>>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+     		<div class="headerBox">
+            	<h1><a href="#" id="logo">Butuh Uang</a></h1>
+                <nav>
+                	<ul>
+                    	<li><a href="#" class="selected">Costumer Page</a></li>
+                    	<li><a href="#">About Us</a></li>
+                    	<li><a href="#">Fees and Charges</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="loginBox">
+                	<ul>
+                    	<li><a href="#">Login</a></li>
+                    	<li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+  		<section>
+        	<div class="stepWrapper">
+            	<ul>
+                	<li class="selected">
+                    	<div class="stepImage">1</div>
+                        <div class="stepInfo">Choose Your Loan</div>
+                    </li>
+                    <li>
+                    	<div class="stepImage">2</div>
+                        <div class="stepInfo">Your Data Detail</div>
+                    </li>
+                    <li>
+                    	<div class="stepImage">3</div>
+                        <div class="stepInfo">Email Verification</div>
+                    </li>
+                    <li>
+                    	<div class="stepImage">4</div>
+                        <div class="stepInfo">Finish</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="setupBox">
+            	<h3>Your Data Detail</h3>
+                <div class="dataDetailBox">
+                	<div class="dataDetailLeft">
+                    	Data Pinjaman
+                    </div>
+                    <div class="dataDetailRight">
+                    	<div class="ddrTop">
+                        	<ul>
+                            	<li>Loan Amount</li>
+                            	<li>Interest / Fee</li>
+                            	<li>Total Repayable</li>
+                            	<li>Due Date</li>
+                            </ul>
+                        </div>
+                        <div class="ddrBottom">
+                        	<ul>
+                            	<li>Rp 8.000.000,-</li>
+                            	<li>Rp 460.000,-</li>
+                            	<li>Rp 8.460.000,-</li>
+                            	<li>31 Sept 2016</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chooseYourLoan">
+                	<div class="loanLeftBox">
+                    	<ul>
+                        	<li>
+                            	<span>Jumlah Pinjaman</span>
+                                <div class="selectBox">
+                                	<select>
+                                    	<option>Rp. 8.000.000,-</option>
+                                    	<option>Rp. 9.000.000,-</option>
+                                    	<option>Rp. 10.000.000,-</option>
+                                    	<option>Rp. 11.000.000,-</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                            	<span>Periode Pinjaman</span>
+                                <div class="selectBox">
+                                	<select>
+                                    	<option>3 Bulan</option>
+                                    	<option>4 Bulan</option>
+                                    	<option>5 Bulan</option>
+                                    	<option>6 Bulan</option>
+                                    	<option>7 Bulan</option>
+                                    	<option>8 Bulan</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="loanRightBox">
+                    	<span>Loan Detail</span>
+                        <div class="loanDescBox">
+                        	<table>
+                            	<tr>
+                                	<td>Loan Amount</td>
+                                	<td>:</td>
+                                	<td>Rp. 8.000.000,-</td>
+                                </tr>
+                            	<tr>
+                                	<td>Interest / Fee</td>
+                                	<td>:</td>
+                                	<td>Rp. 460.000,-</td>
+                                </tr>
+                            	<tr>
+                                	<td>Total Repayable</td>
+                                	<td>:</td>
+                                	<td>Rp. 8.460.000,-</td>
+                                </tr>
+                            	<tr>
+                                	<td>Due Date</td>
+                                	<td>:</td>
+                                	<td>31 Sept 2016</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonWrapper">
+                    	<a href="#" class="defBtn nextBtn">Next &gt;</a>
+                    </div>
+            </div>
+        </section>
+        <footer>
+        	<div class="footerBox">
+            	<div class="footerLeftBox">
+                	<h3>Call Centre</h3>
+                    <span>(021) 1234567890</span>
+                    <span class="small">butuhuang.com</span>
+                </div>
+                <div class="footerRightBox">
+                	<ul>
+                    	<li><a href="#">Terms and Condition</a></li>
+                    	<li><a href="#">FAQ</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <p>copyright &copy; 2015 ButuhUang.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

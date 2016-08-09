@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 980px){
+	.sliderBox {
+		width: 100%;
+		padding: 0px 40px;
+		text-align: center;
+	}
+
+	.sliderInfoBox {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 30px;
+		float: none;
+	}
+
+	.loanWrapper {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.rulesBox {
+		width: 100%;
+	}
+
+	.rulesBox h3 {
+		text-align: center;
+	}
+
+	.rulesBox ul {
+		text-align: center;
+	}
+
+	.rulesBox ul li {
+		display: inline-block;
+		float: none;
+		width: 210px
+	}
+
+	.stepImage {
+		width: 210px;
+		height: 150px;
+	}
+
+	.stepInfo {
+		height: 145px;
+		text-align: left;
+	}
+
+	.paymentBox {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.paymentInfo {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding-right: 20px;
+	}
+
+	.transferBox {
+		width: 100%;
+		display: block;
+	}
+
+	.transferBox ul {
+		text-align: center;
+	}
+
+	.transferBox ul li {
+		display: inline-block;
+		float: none;
+		margin-top: 21px;
+		margin-left: 10px;
+	}
+
+	.footerBox {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footerLeftBox {
+		float: none;
+	}
+
+	.footerRightBox {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px){
+}
+
+@media only screen and (max-width: 640px){
+	.sliderInfoBox {
+		font-size: 24px;
+	}
+
+	.loanWrapper {
+		width: 100%;
+	}
+
+	.loanBox h3, .loanDetailBox h3 {
+		font-size: 18px;
+	}
+
+	.loanBox {
+		width: 100%;
+		float: none;
+	}
+
+	.loanInfoBox h4 {
+		font-size: 16px;
+	}
+
+	span.info {
+		float: none;
+		text-align: left;
+		border: 1px solid #F5B419;
+		padding: 14px 10px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.loanDetailBox {
+		width: 100%;
+		float: none;
+		padding-left: 0px;
+		border-top: 1px solid #E6E7E8;
+		border-left: 0px;
+		padding-top: 13px;
+	}
+
+	.loanDetailBox table {
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	.loanDetailBox table tr {
+		display: inline-block;
+		text-align: left;
+		margin: 0px 20px;
+	}
+
+	.loanDetailBox table tr td {
+		font-size: 16px;
+	}
+
+	.loanDetailBox table tr td:nth-child(1) {
+		/*width: 100%;*/
+	}
+
+	.loanDetailBox table tr td:nth-child(2) {
+		padding: 0px 0px 20px;
+	}
+
+	.loanDetailBox table tr td:last-child {
+		color: #F5B419;
+		display: inline-block;
+	}
+
+	.loanWrapper .nextBtn {
+		float: none;
+	}
+
+	.loanWrapper .defBtn {
+		width: 160px;
+		height: 50px;
+		font-size: 16px;
+		margin: 0px auto;
+		padding-top: 10px;
+	}
+
+	.rulesBox h3 {
+		font-size: 18px;
+	}
+
+	.stepInfo span, .stepInfo p {
+		font-size: 16px;
+	}
+
+	.paymentInfo {
+		font-size: 18px;
+	}
+
+	.transferBox ul li span {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+}

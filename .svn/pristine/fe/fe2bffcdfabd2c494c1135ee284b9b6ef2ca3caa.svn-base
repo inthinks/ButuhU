@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name="HandheldFriendly" content="true">
+<title><?php echo $title ?></title>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<?php if($this->uri->segment(1)=='step_loan'){echo '<link href="<?php echo base_url();?>templates/css/dt.css" rel="stylesheet" type="text/css">';} ?>
+<link href="<?php echo base_url();?>templates/css/butuhuang.css" rel="stylesheet" type="text/css">
+<?php if($this->uri->segment(1)=='home') { ?>
+<style type="text/css">
+.ui-widget-content{
+    background:#F5B419 !important;
+    border:none !important;
+    height:5px !important;
+    border-radius:5px !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    height:25px !important;
+    width:25px !important;
+    border:none !important;
+    background:url(templates/images/icon_rounded.png) no-repeat top center !important;
+}
+.ui-slider-horizontal .ui-slider-handle{
+    top:-10px !important;
+}
+.ui-slider-float .ui-slider-tip, .ui-slider-float .ui-slider-tip-label{
+    width:auto !important;
+    padding:0 10px !important;
+    margin-left:0 !important;
+    -webkit-transform:translateX(-50%) !important;
+    -moz-transform:translateX(-50%) !important;
+    transform:translateX(-50%) !important;
+}
+</style> 
+<?php } ?>
+
+<link href="<?php echo base_url();?>templates/css/jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url();?>templates/css/selectordie.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url();?>templates/css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url();?>templates/css/jquery-ui-slider-pips.css" rel="stylesheet" type="text/css">
+<link href="<?php echo base_url();?>templates/css/validationEngine.jquery.css" rel="stylesheet" type="text/css">
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>templates/js/jquery.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery.validationEngine-en.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery.validationEngine.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery-ui.js"></script>
+<script src="<?php echo base_url();?>templates/js/selectordie.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery.mousewheel.js"></script>
+<script src="<?php echo base_url();?>templates/js/mwheelIntent.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery.jscrollpane.min.js"></script>
+<script src="<?php echo base_url();?>templates/js/jquery-ui-slider-pips.js"></script>
+<script src="<?php echo base_url();?>templates/js/main.js"></script>
+
+</head>
+<script type="text/javascript">
+	function toRp(angka){
+            var rev     = parseInt(angka, 10).toString().split('').reverse().join('');
+            var rev2    = '';
+            for(var i = 0; i < rev.length; i++){
+                rev2  += rev[i];
+                if((i + 1) % 3 === 0 && i !== (rev.length - 1)){
+                    rev2 += '.';
+                }
+            }
+            return 'Rp. ' + rev2.split('').reverse().join('');
+        }
+</script>
+
+<body>
+    <div class="wrapper">
+        <?php $this->load->view('common/header');?>
+        <?php $this->load->view($content);?>
+        <?php $this->load->view('common/footer');?>
+    </div>
+  
+</body>
+</html>
+

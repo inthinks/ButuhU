@@ -1,0 +1,40 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Setting extends CI_Controller {
+	function __construct(){
+		parent::__construct();
+		if($this->session->userdata('admin_logged_in')==false)redirect('admin/login');
+		$this->load->model('general_model');
+		$this->load->model('setting_model');
+		
+	}
+
+    function edit(){
+        $where = $this->input->post('where');
+        $max_per = $this->input->post('max_per');
+        $min_per = $this->input->post('min_per');
+        $max_am = $this->input->post('max_am');
+        $min_am = $this->input->post('min_am');
+        $interest = $this->input->post('interest');
+         if($_POST){
+         	$data = array(
+         		'max_period' => $max_per,
+         		'min_period' => $min_per,
+         		'max_amount' => $max_am,
+         		'min_amount' => $min_am,
+         		'interest' => $interest,
+         		);
+
+         	$table = 'setting_tb';
+         	$where = array('max_period'=>$where);
+         	$this->general_model->update_data($table, $data, $where);
+         	$this->session->set_flashdata('notif', 'Data Berhasil di Update!');
+         	redirect($_SERVER['HTTP_REFERER']);
+         }
+
+        $this->data['content'] = 'admin/setting/edit';
+        $this->data['data'] = $this->setting_model->data();
+        $this->load->view('common/admin/body', $this->data);
+    }
+
+
+}

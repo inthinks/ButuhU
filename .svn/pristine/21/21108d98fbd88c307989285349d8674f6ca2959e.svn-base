@@ -1,0 +1,23 @@
+function show_popup_delete(){
+	$('.popupWrapper, #popup_delete_email').fadeIn();
+	return false;
+}
+function hide_popup(){
+	$('.popupWrapper, .popupBox').fadeOut();
+	return false;
+}
+function show_popup_menu(){
+	$('#menu-blue').fadeIn();
+	return false;
+}
+function hide_popup_menu(){
+	$('#menu-blue').fadeOut();
+	return false;
+}
+$(document).ready(function(){
+	if($('select').length>0){
+		$('select').selectOrDie({
+			size: 5
+		});
+	}
+});

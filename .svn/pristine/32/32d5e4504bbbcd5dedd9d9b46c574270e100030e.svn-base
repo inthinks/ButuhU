@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+<meta name="HandheldFriendly" content="true" />
+<title>Set Up Loan | Butuh Uang</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+<link href="css/butuhuang.css" rel="stylesheet" type="text/css">
+<link href="css/butuhuang-mobile.css" rel="stylesheet" type="text/css">
+<link href="css/selectordie.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/selectordie.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/mwheelIntent.js"></script>
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+     		<div class="headerBox">
+            	<h1><a href="#" id="logo">Butuh Uang</a></h1>
+                <nav>
+                	<ul>
+                    	<li><a href="#" class="selected">Costumer Page</a></li>
+                    	<li><a href="#">About Us</a></li>
+                    	<li><a href="#">Fees and Charges</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="loginBox">
+                	<ul>
+                    	<li><a href="#">Login</a></li>
+                    	<li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerBox-mobile">
+                <h1><a href="#" id="logo">Butuh Uang</a></h1>
+                <div class="icon-box">
+                    <a href="#"><div class="icon-man-blue"></div></a>
+                    <a href="#" class="show-menu" onClick="show_popup_menu(); return false;"><div class="icon-menu"></div></a>
+                </div>
+            </div>
+        </header>
+  		<section>
+        	<div class="stepWrapper">
+            	<ul>
+                	<li class="done">
+                    	<div class="stepImage">1</div>
+                        <div class="stepInfo">Choose Your Loan</div>
+                    </li>
+                    <li class="selected">
+                    	<div class="stepImage">2</div>
+                        <div class="stepInfo">Your Data Detail</div>
+                    </li>
+                    <li>
+                    	<div class="stepImage">3</div>
+                        <div class="stepInfo">Email Verification</div>
+                    </li>
+                    <li>
+                    	<div class="stepImage">4</div>
+                        <div class="stepInfo">Finish</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="setupBox">
+            	<h3>Your Data Detail</h3>
+                <div class="dataDetailBox">
+                	<div class="dataDetailLeft">
+                    	Data Pinjaman
+                    </div>
+                    <div class="dataDetailRight">
+                    	<div class="ddrTop">
+                        	<ul>
+                            	<li>Loan Amount</li>
+                            	<li>Interest / Fee</li>
+                            	<li>Total Repayable</li>
+                            	<li>Due Date</li>
+                            </ul>
+                        </div>
+                        <div class="ddrBottom">
+                        	<ul>
+                            	<li>Rp 8.000.000,-</li>
+                            	<li>Rp 460.000,-</li>
+                            	<li>Rp 8.460.000,-</li>
+                            	<li>31 Sept 2016</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="formWrapper">
+                	<ul>
+                    	<li><a href="#personal_detail">Personal Detail</a></li>
+                    	<li><a href="#contact_detail">Contact Detail</a></li>
+                    	<li><a href="#bank_detail">Bank Detail</a></li>
+                    	<li><a href="#other_detail">Other Detail</a></li>
+                    	<li><a href="#agreement" class="selected">Agreement</a></li>
+                    </ul>
+                    <div class="formBox">
+                    	<div class="agreementWrapper">
+                        	<div class="agreementBox jscroll-pane">
+                            	<div class="agreement">
+                                	
+                            	Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                Name : blablabla<br>
+                                </div>
+                            </div>
+                            <div class="signatureBox">
+                            	<span>Debitur</span>
+                                <img src="#">
+                                <span>Viola</span>
+                            </div>
+                            <label><input type="checkbox"><span>I agree on all the condition above</span></label>
+                            <label><input type="checkbox"><span>I've read and acept the privacy statement and agree with our fees &amp; charges role.</span></label>
+                            <label><input type="checkbox"><span>I confirm that all the details provided are valid, accurate and true</span></label>
+                            <label><input type="checkbox"><span>I Understand that Butuhuang.com will refer all fraudulent applications to the authorities for prosecution. Your IP Address will be recorded for security purposes.</span></label>
+                            <label><input type="checkbox"><span>By this means you agree and understand that if you do not repay the loan, then PT DIGITAL ALPHA INDONESIA will share your data information to the Banks or other Financial Institutions in Indonesia
+and you may not be able to get a loan or credit from both institutions. We will also share your data 
+with authorities in Indonesia. </span></label>
+							<a href="#" class="defBtn">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+        	<div class="footerBox">
+            	<div class="footerLeftBox">
+                	<h3>Call Centre</h3>
+                    <span>(021) 1234567890</span>
+                    <span class="small">butuhuang.com</span>
+                </div>
+                <div class="footerRightBox">
+                	<ul>
+                    	<li><a href="#">Terms and Condition</a></li>
+                    	<li><a href="#">FAQ</a></li>
+                    	<li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <p>copyright &copy; 2015 ButuhUang.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup-all" id="menu-blue">
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <div class="popup-header">
+                <div class="popup-header-left">
+                    <!-- <a href="#"><div class="icon-man-white"></div></a> Hello, <a href="#">Mr Daniel Sipayung</a> --> <!-- //if online -->
+                    <a href="#"><div class="icon-man-white"></div></a> Hello, <a href="#">Guest!</a>
+                    <p>Not yet member, register <a href="#">here</a></p>
+                </div>
+                <div class="popup-header-right">
+                    <a href="#" onClick="hide_popup_menu(); return false;"><div class="icon-close"></div></a>
+                </div>
+            </div>
+            <div class="popup-content">
+                <h2><a href="#">Costumer Page</a></h2>
+                <h2><a href="#">About Us</a></h2>
+                <h2><a href="#">Fees and Charges</a></h2>
+                <h2><a href="#">Contact Us</a></h2>
+                <hr></hr>
+                <h2><a href="#">Term and Condition</a></h2>
+                <h2><a href="#">Contact Us</a></h2>
+                <h2><a href="#">FAQ</a></h2>
+                <p>copyright &copy; 2015 ButuhUang.com</p>
+            </div>
+        </div>
+    </div>
+    <script>
+		$('.jscroll-pane').jScrollPane();
+	</script>
+</body>
+</html>

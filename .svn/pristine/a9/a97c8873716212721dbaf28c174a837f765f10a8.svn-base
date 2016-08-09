@@ -1,0 +1,36 @@
+<?php if(!defined("BASEPATH")) exit("Hack Attempt");
+class Home extends CI_Controller{
+    function __construct(){
+        parent::__construct();
+        // $this->load->model('customer_model');
+    }
+
+    function index(){
+        $this->data['title'] = 'Index';
+    	$this->data['content'] = 'content/home/home';
+    	$this->load->view('common/body', $this->data);
+    }
+
+    function destroy(){
+    	$this->session->sess_destroy();
+    	redirect('home');
+    }
+
+    function do_loan(){
+        $la = $this->input->post('la');
+        $interest= $this->input->post('interest');
+        $repayable = $this->input->post('repayable');
+        $due_date = $this->input->post('due_date');
+
+        $loan = array(
+            'loan_amount' => $la,
+            'interest' => $interest,
+            'due_date' => $due_date,
+            'total_repayable' => $repayable,
+            );
+
+        $this->session->set_userdata('loan', $loan);
+
+        pre($this->session->userdata('loan')); exit();
+    }
+}

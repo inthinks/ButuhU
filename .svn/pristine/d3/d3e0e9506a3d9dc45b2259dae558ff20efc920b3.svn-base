@@ -1,0 +1,46 @@
+<section>
+            <div class="titleWrapper">
+                <div class="titleBox">
+                    <div class="titleContent">
+                        Contact Us
+                    </div>
+                    <div class="titleDesc">
+                        Kami selalu siap melayani anda. Kepuasan anda adalah tujuan kami.Anda dapat menghubungi kami melalu website butuhuang.com atau langsung email ke support@butuhuang.com 
+                    </div>
+                </div>
+            </div>
+            <div class="contactUsWrapper">
+                <div class="halfBox">
+                    <ul>
+                        <li>
+                            <h3>Name</h3>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <h3>Email</h3>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <h3>Phone Number</h3>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <h3>Messages</h3>
+                            <textarea></textarea>
+                        </li>
+                    </ul>
+                    <a href="#" class="defBtn">Send</a>
+                </div>
+                <div class="halfBox">
+                    <h3>Our Office</h3>
+                    Jl. Kusuma Bangsa No. 110<br>
+                    Surabaya 60136<br>
+                    Telp. (031) 5355339 (Hunting)<br>
+                    Fax. (031) 5325855<br>
+                    <div class="contactFooter">
+                        <h3>Customer Care</h3>
+                        <span>(021) 1234567890</span>
+                    </div>
+                </div>
+            </div>
+        </section>
